@@ -9,6 +9,7 @@
   .header__container {
     max-width: 1450px;
     margin: 0 auto;
+    padding-top: 30px;
 
     .header {
       display: flex;
@@ -19,6 +20,13 @@
         display: flex;
 
         li {
+          a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #E0E1E3;
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
@@ -29,8 +37,96 @@
           &:first-child {
             margin-right: 30px;
           }
+
+          &:first-child {
+            margin-right: 30px;
+          }
         }
       }
+
+      &__nav {
+        display: flex;
+        align-items: center;
+        li {
+          a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #E0E1E3;
+          }
+          &:not(:last-child) {
+            margin-right: 55px;
+          }
+        }
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+        li {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+          color: #E0E1E3;
+
+          img {
+            margin-left: 65px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    background-image: url("../img/background.png");
+    height: 91%;
+    position: absolute;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .digital {
+      display: flex;
+      align-items: center;
+      max-width: 1450px;
+      justify-content: space-between;
+      margin: 9% auto 0;
+
+      .digital__info {
+        &__title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 140px;
+          line-height: 171px;
+          letter-spacing: 0.01em;
+          color: #E0E1E3;
+          width: 610px;
+        }
+        &__title--red {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 95px;
+          line-height: 116px;
+          letter-spacing: 0.01em;
+          color: #B21414;
+          padding-bottom: 45px;
+        }
+        &__subtitle {
+          width: 608px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 145%;
+          letter-spacing: 0.01em;
+          color: #E0E1E3;
+        }
+      }
+      &__mouse {
+        position: absolute;
+        bottom: 40px;
+        right: 50%;
+        left: 50%;
 
       &__nav {
         display: flex;
