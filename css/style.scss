@@ -27,6 +27,15 @@
             line-height: 24px;
             letter-spacing: 0.01em;
             color: #E0E1E3;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+          color: #E0E1E3;
+
+          &:first-child {
+            margin-right: 30px;
           }
 
           &:first-child {
@@ -118,6 +127,14 @@
         bottom: 40px;
         right: 50%;
         left: 50%;
+
+      &__nav {
+        display: flex;
+        align-items: center;
+      }
+      &__info {
+        display: flex;
+        align-items: center;
       }
     }
   }
