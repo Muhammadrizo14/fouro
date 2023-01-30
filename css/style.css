@@ -47,5 +47,13 @@ li {
 .wrapper .header__container .header__langs li:first-child {
   margin-right: 30px;
 }
+.wrapper .header__container .header__nav {
+  display: flex;
+  align-items: center;
+}
+.wrapper .header__container .header__info {
+  display: flex;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
