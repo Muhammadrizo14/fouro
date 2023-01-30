@@ -5,10 +5,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+  src: url(../fonts/montserrat/Montserrat-Regular.woff);
 }
 a {
   text-decoration: none;
@@ -27,6 +24,7 @@ li {
 .wrapper .header__container {
   max-width: 1450px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 .wrapper .header__container .header {
   display: flex;
@@ -36,7 +34,7 @@ li {
 .wrapper .header__container .header__langs {
   display: flex;
 }
-.wrapper .header__container .header__langs li {
+.wrapper .header__container .header__langs li a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -46,6 +44,84 @@ li {
 }
 .wrapper .header__container .header__langs li:first-child {
   margin-right: 30px;
+}
+.wrapper .header__container .header__nav {
+  display: flex;
+  align-items: center;
+}
+.wrapper .header__container .header__nav li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #E0E1E3;
+}
+.wrapper .header__container .header__nav li:not(:last-child) {
+  margin-right: 55px;
+}
+.wrapper .header__container .header__info {
+  display: flex;
+  align-items: center;
+}
+.wrapper .header__container .header__info li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #E0E1E3;
+}
+.wrapper .header__container .header__info li img {
+  margin-left: 65px;
+}
+.wrapper main {
+  background-image: url("../img/background.png");
+  height: 91%;
+  position: absolute;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.wrapper main .digital {
+  display: flex;
+  align-items: center;
+  max-width: 1450px;
+  justify-content: space-between;
+  margin: 9% auto 0;
+}
+.wrapper main .digital .digital__info__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 140px;
+  line-height: 171px;
+  letter-spacing: 0.01em;
+  color: #E0E1E3;
+  width: 610px;
+}
+.wrapper main .digital .digital__info__title--red {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 95px;
+  line-height: 116px;
+  letter-spacing: 0.01em;
+  color: #B21414;
+  padding-bottom: 45px;
+}
+.wrapper main .digital .digital__info__subtitle {
+  width: 608px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 145%;
+  letter-spacing: 0.01em;
+  color: #E0E1E3;
+}
+.wrapper main .digital__mouse {
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  left: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
