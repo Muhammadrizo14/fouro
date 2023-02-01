@@ -9,61 +9,364 @@
     <title>Fouro</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header__container">
-            <div class="header">
-                <a href="/">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-                <ul class="header__langs">
+<input type="hidden" value="1" id="helper-input">
+<div class="wrapper">
+    <header class="header__container">
+        <div class="header">
+            <a href="/">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul class="header__langs">
+                <li>
+                    <a href="#">IT</a>
+                </li>
+                <li>
+                    <a href="#">EN</a>
+                </li>
+            </ul>
+            <ul class="header__nav">
+                <li>
+                    <a href="#" class="linkServices">Услуги</a>
+                </li>
+                <li>
+                    <a href="#" class="linkKeys">Кейсы</a>
+                </li>
+                <li>
+                    <a href="#" class="linkAgent">О нас</a>
+                </li>
+                <li>
+                    <a href="#" class="linkComment">Контакты</a>
+                </li>
+            </ul>
+            <ul class="header__info">
+                <li>
+                    <a style="color: #fff" href="tel:+7 (499) 375-41-14">+7 (499) 375-41-14</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="slides__wrapper">
+        <section class="digital site__slide marketing__slide  ">
+            <div class="digital__info">
+                <h1 class="digital__info__title">DIGITAL</h1>
+                <h3 class="digital__info__title--red">MARKETING</h3>
+                <p class="digital__info__subtitle">
+                    Раскроем потенциал вашего бизнеса, благодаря комплексному подходу
+                    в продвижении
+                </p>
+            </div>
+            <div class="digital__image">
+                <img class="digital__image__border" src="img/border.png" alt="">
+                <img class="digital__image__play" src="img/playbtn.png" alt="">
+            </div>
+            <div class="digital__mouse">
+                <div class='scrolldown' style="--color: coral">
+                    <div class="chevrons">
+                        <div class='chevrondown'></div>
+                        <div class='chevrondown'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="digital site__slide tag__slide index">
+            <div class="digital__info">
+                <p class="digital__info__subtitle">
+                    Занимается продвижением оффлайн-брендов в цифровой среде. Основываясь на анализе аудитории, продукта
+                    и конкурентов, предлагаем комплексные услуги для вашего бизнеса: от разработки стратегии продвижения
+                    до ее реализации.
+                </p>
+            </div>
+            <div class="digital__skills__wrapper">
+                <div class="digital__skills__wrapper">
+                    <div class="digital__skill">
+                        <p>#Разработка сайтов</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Digital-стратегия</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Аналитика</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Аудит</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Анализ конкурентов</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#SMM</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Таргетированная реклама</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#SEO</p>
+                    </div>
+                    <div class="digital__skill">
+                        <p>#Контекстная реклама</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="digital site__slide agent__slide ">
+            <div class="digital__info">
+                <h3 class="agent__title">Агентство <span>FOURO</span></h3>
+                <p class="digital__info__subtitle agent__subtitle">
+                    – команда профессионалов-единомышленников в области digital-маркетинга, фанатеющих от своей работы.
+                    <br>
+                    <br>
+                    Философия нашего агентства проста – создавать эффективные проекты по продвижению бизнеса в цифровой
+                    среде.
+                </p>
+                <button class="agent__button">
+                    <p>
+                        заказать
+                    </p>
+                    <img class="agent__button__arrow" src="img/arrow.png" alt="">
+                </button>
+            </div>
+        </section>
+        <section class="digital site__slide develop__slide ">
+            <div class="digital__info">
+                <h2 class="digital__info__title develop__site__title digital__info__title--50">разработка сайтов</h2>
+                <p class="digital__info__subtitle develop__site__subtitle agent__subtitle">
+                    Умеем не просто делать новые сайты, или производить апгрейд текущих – мы делаем инструменты для
+                    привлечения клиентов и зарабатывания денег.
+                </p>
+                <button class="agent__button develop__site__button">
+                    <p>
+                        заказать
+                    </p>
+                    <img class="agent__button__arrow" src="img/arrow.png" alt="">
+                </button>
+            </div>
+            <div class="digital__image">
+                <img class="empty_block develop__site__block" src="img/empty_block.png" alt="">
+            </div>
+        </section>
+        <section class="digital site__slide analize__slide">
+            <div class="digital__info">
+                <h2 class="digital__info__title digital__info__title--50 analize__title ">Анализ и аудит</h2>
+                <p class="digital__info__subtitle agent__subtitle  analize__subtitle">
+                    Сделаем полный анализ работы сайта - от получения посетителей до нужной конверсии. Проверим тепловые
+                    карты, микроконверсии и настроим нужные цели для систем аналитики яндекса, гугла и call-tracking.
+                </p>
+                <button class="agent__button">
+                    <p>
+                        заказать
+                    </p>
+                    <img class="agent__button__arrow" src="img/arrow.png" alt="">
+                </button>
+            </div>
+            <div class="digital__image">
+                <img class="empty_block analize__empty_block" src="img/empty_block.png" alt="">
+            </div>
+        </section>
+        <section class="digital site__slide ad__slide">
+            <div class="digital__info">
+                <h2 class="digital__info__title digital__info__title--50">реклама
+                    и продвижение</h2>
+                <p class="digital__info__subtitle agent__subtitle">
+                    Ваш бизнес может получать рекламный трафик не только из контекста и из социальных сетей. В
+                    зависимости от сферы деятельности, эффективность такой рекламы может быить даже выше
+                    традиционных платных каналов
+                </p>
+                <button class="agent__button">
+                    <p>
+                        заказать
+                    </p>
+                    <img class="agent__button__arrow" src="img/arrow.png" alt="">
+                </button>
+            </div>
+        </section>
+        <section class="digital site__slide keys__slide slides-container__slide--active ">
+            <div class="digital__info keys__wrap">
+                <div class="keys__items">
+                    <div class="keys__item activekeys">
+                        <div class="keys__item__text">
+                            <h3>Салон немецких кухонь</h3>
+                            <p>ROI - 1500% за 1,5 года</p>
+                        </div>
+                        <div class="keys__item__image">
+                            <img class="active__keys__image" src="img/keys/1.png" alt="">
+                        </div>
+                        <div class="keys__item__link">
+                            <h4>разработка сайта</h4>
+                            <button>
+                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="#E0E1E3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="keys__item">
+                        <div class="keys__item__text">
+                            <h3>Салон немецких кухонь</h3>
+                            <p>ROI - 1500% за 1,5 года</p>
+                        </div>
+                        <div class="keys__item__image">
+                            <img  src="img/keys/2.png" alt="">
+                        </div>
+                        <div class="keys__item__link">
+                            <h4>разработка сайта</h4>
+                            <button>
+
+                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="#E0E1E3"/>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="keys__item">
+                        <div class="keys__item__text">
+                            <h3>Салон немецких кухонь</h3>
+                            <p>ROI - 1500% за 1,5 года</p>
+                        </div>
+                        <div class="keys__item__image">
+                            <img src="img/keys/3.jpg" alt="">
+                        </div>
+                        <div class="keys__item__link">
+                            <h4>разработка сайта</h4>
+                            <button>
+
+                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="#E0E1E3"/>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="keys__item">
+                        <div class="keys__item__text">
+                            <h3>Салон немецких кухонь</h3>
+                            <p>ROI - 1500% за 1,5 года</p>
+                        </div>
+                        <div class="keys__item__image">
+                            <img src="img/keys/4.png" alt="">
+                        </div>
+                        <div class="keys__item__link">
+                            <h4>разработка сайта</h4>
+                            <button>
+
+                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="#E0E1E3"/>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="digital site__slide client__slide ">
+            <div class="digital__info client__wrap">
+                <h2 class="digital__info__title digital__info__title--50 client__slide__title">
+                    Клиенты
+                </h2>
+                <div class="clients">
+                    <div class="client">
+                        <img src="img/clients/1.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/2.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/3.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/4.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/5.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/6.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/7.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/8.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/clients/9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="digital site__slide feed__back__slide ">
+            <div class="digital__info feed__back">
+                <div class="feed__back__form">
+                    <h1 class="feed__back__form__title">
+                        Давайте обсудим ваш проект
+                    </h1>
+                    <div class="df">
+                        <input class="feed__back__form__input__name" type="text" placeholder="Имя">
+                        <input class="feed__back__form__input__phone" type="text" placeholder="Телефон">
+                    </div>
+                    <textarea class="feed__back__form__input__comment" resize="none" placeholder="Комментарий"></textarea>
+                    <p class="info">Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+                    <button class="agent__button develop__site__button">
+                        <p>
+                            Отправить
+                        </p>
+                    </button>
+                </div>
+                <div class="feed__back__image">
+                    <img src="img/flame.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="digital site__slide footer__slide  ">
+            <div class="digital__info footer__wrap">
+                <ul class="footer__list footer__copy">
                     <li>
-                        <a href="#">IT</a>
+                        <img src="img/logo.png" alt="">
                     </li>
                     <li>
-                        <a href="#">EN</a>
+                        <p>Политика конфиденциальности</p>
+                    </li>
+                    <li>
+                        <p>© 2021, Fouro</p>
                     </li>
                 </ul>
-                <ul class="header__nav">
-                    <li>
-                        <a href="#">Услуги</a>
-                    </li>
-                    <li>
-                        <a href="#">Кейсы</a>
-                    </li>
-                    <li>
-                        <a href="#">О нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
+                <ul class="footer__list footer__services">
+                    <li>Услуги</li>
+                    <li>Создание сайтов</li>
+                    <li>Контекстная реклама</li>
+                    <li>SEO</li>
+                    <li>Digital-стратегия</li>
                 </ul>
-                <ul class="header__info">
+                <ul class="footer__list footer__continue__services">
+                    <li>Smm</li>
+                    <li>Аналитика</li>
+                    <li>Анализ конкурентов</li>
+                    <li>Таргетированная реклама</li>
+                    <li>Аудит</li>
+                </ul>
+                <ul class="footer__list footer__navs">
+                    <li>Кейсы</li>
+                    <li>О НАС</li>
+                    <li>Контакты</li>
+                </ul>
+                <ul class="footer__list footer__info">
                     <li>+7 (499) 375-41-14</li>
-                    <li>
-                        <img src="img/phone.png" alt="">
-                    </li>
+                    <li>info@fouro.ru</li>
                 </ul>
             </div>
-        </header>
-        <main>
-            <section class="digital">
-                <div class="digital__info">
-                    <h1 class="digital__info__title">DIGITAL</h1>
-                    <h3 class="digital__info__title--red">MARKETING</h3>
-                    <p class="digital__info__subtitle">
-                        Раскроем потенциал вашего бизнеса, благодаря комплексному подходу
-                        в продвижении
-                    </p>
-                </div>
-                <div class="digital__image">
-                    <img src="img/go-video.png" alt="">
-                </div>
-                <img class="digital__mouse" src="img/mouse.png" alt="">
-            </section>
-        </main>
-    </div>
+        </section>
+    </main>
+</div>
+
+<script src="libs/gsap.js"></script>
+<script src="libs/swiped-events.js"></script>
+<script src="libs/bezier.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/keyses.js"></script>
+<script src="js/slideBlockss.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+
 </body>
-</html>
+</html> 
