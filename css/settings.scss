@@ -5,8 +5,6 @@
 }
 
 
-
-
 body {
   overflow: hidden !important;
 }
@@ -15,6 +13,7 @@ body {
   font-family: 'Montserrat';
   src: url(../fonts/montserrat/Montserrat-Regular.woff);
 }
+
 .site__slide {
   opacity: 0;
   visibility: hidden;
@@ -40,23 +39,27 @@ body {
   transition: all 0.6s linear;
   transform: translateY(-16vh);
 }
+
 .footer__slide {
   margin-top: 0 !important;
   transform: translateY(-15vh);
   background: #000;
   min-width: 100% !important;
   height: 100%;
+
   .footer__wrap {
     max-width: 1450px;
-    margin: 0  auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+
     .footer__copy {
       img {
         padding-bottom: 39px;
       }
+
       p {
         font-style: normal;
         font-weight: 400;
@@ -64,11 +67,13 @@ body {
         line-height: 20px;
         letter-spacing: 0.01em;
         color: #FFFFFF;
+
         &:first-child {
           padding-bottom: 20px;
         }
       }
     }
+
     .footer__services {
       li {
         font-style: normal;
@@ -76,8 +81,9 @@ body {
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.01em;
-        padding: 13px 0 ;
+        padding: 13px 0;
         color: #FFFFFF;
+
         &:first-child {
           font-weight: 600;
           text-transform: uppercase;
@@ -85,6 +91,7 @@ body {
         }
       }
     }
+
     .footer__continue__services {
       li {
         font-style: normal;
@@ -92,13 +99,15 @@ body {
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.01em;
-        padding: 13px 0 ;
+        padding: 13px 0;
         color: #FFFFFF;
+
         &:first-child {
           text-transform: uppercase;
         }
       }
     }
+
     .footer__navs {
       li {
         font-style: normal;
@@ -110,6 +119,7 @@ body {
         color: #FFFFFF;
       }
     }
+
     .footer__info {
       li {
         font-style: normal;
@@ -125,6 +135,7 @@ body {
   }
 }
 
+
 .index {
   z-index: 10;
 }
@@ -138,6 +149,7 @@ img {
 
 }
 
+
 li {
   list-style: none;
 }
@@ -146,6 +158,44 @@ li {
   width: 0;
 }
 
+.preloader {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 999999;
+  transition: 1s all;
+  visibility: visible;
+}
+
+.preloader.done {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.loader {
+  height: 76px;
+  width: 76px;
+  position: absolute;
+  border: 4px solid #fff;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  border-top-color: yellow;
+  transform: translate(-50%, -50%);
+  animation: 2s spin infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 
 /* copy from here */
 .scrolldown {
@@ -196,6 +246,7 @@ li {
     opacity: 0;
   }
 }
+
 .chevrons {
   padding: 6px 0 0 0;
   margin-left: -3px;
@@ -216,12 +267,15 @@ li {
   height: 10px;
   transform: rotate(45deg);
 }
+
 .chevrondown:nth-child(odd) {
   animation: pulse 500ms ease infinite alternate;
 }
+
 .chevrondown:nth-child(even) {
   animation: pulse 500ms ease infinite alternate 250ms;
 }
+
 @keyframes pulse {
   from {
     opacity: 0;
@@ -230,4 +284,5 @@ li {
     opacity: 0.5;
   }
 }
+
 /*copy until here */
