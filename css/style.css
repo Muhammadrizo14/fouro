@@ -145,6 +145,7 @@ li {
 .preloader.done {
   overflow: hidden;
   opacity: 0;
+  visibility: hidden;
 }
 
 .loader {
