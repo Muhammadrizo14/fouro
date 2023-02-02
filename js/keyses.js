@@ -1,11 +1,12 @@
 let keyses = document.querySelectorAll('.keys__item')
-let activeKeyse = document.querySelector('.activekeys')
+// let activeKeyse = document.querySelector('.activekeys')
 
 
 
 keyses.forEach((keys) => {
+    console.log(1)
     keys.addEventListener('mouseenter', (current) => {
-
+        console.log(1)
         let childrenImageElement = current.srcElement.children[1].children[0]
         let childrenBtnElement = current.srcElement.children[2].children[1].querySelector('svg path')
         keyses.forEach(keyss => {
